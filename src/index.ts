@@ -9,7 +9,7 @@ import {
 } from "@src/cli.js";
 import { DefaultClientManager } from "@src/confluent/client-manager.js";
 import { ToolHandler } from "@src/confluent/tools/base-tools.js";
-import { ToolFactory } from "@src/confluent/tools/tool-factory.js";
+
 import { ToolName } from "@src/confluent/tools/tool-name.js";
 import { EnvVar } from "@src/env-schema.js";
 import { initEnv } from "@src/env.js";
