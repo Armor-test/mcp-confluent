@@ -134,8 +134,7 @@ export class HttpTransport implements Transport {
         },
       },
       async (
-        request: FastifyRequest<{ Headers: McpRequestHeaders }>,
-        reply: FastifyReply,
+        
       ) => {
         const sessionId = request.headers["mcp-session-id"];
         if (!sessionId || !this.sessions[sessionId]) {
