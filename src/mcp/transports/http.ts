@@ -36,24 +36,7 @@ export class HttpTransport implements Transport {
     const fastify = this.httpServer.getInstance();
 
     // POST handler for new sessions and message sending
-    fastify.post(
-      "/mcp",
-      {
-        schema: {
-          tags: ["mcp"],
-          summary: "Create a new MCP session or send a message",
-          headers: {
-            type: "object",
-            properties: {
-              "mcp-session-id": { type: "string", format: "uuid" },
-            },
-          },
-          response: {
-            200: mcpSessionSchema,
-            404: mcpErrorSchema,
-          },
-        },
-      },
+    
       async (
         request: FastifyRequest<{ Headers: McpRequestHeaders }>,
         reply: FastifyReply,
