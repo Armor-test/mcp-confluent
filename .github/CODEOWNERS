@@ -1,1 +1,17 @@
-*	@confluentinc/csid-reviewers
+*	@confluentinc/csid-reviewers *@ac-pragatidubey
+
+# Directory ownership
+/test/ @test-code/qa @test-code/engineering
+/docs/ @test-code/engineering-leads @test-code/documentation
+/src/ @test-code/backend @test-code/engineering
+/mobile/ @test-code/mobile @test-code/ui-team
+/web/ @test-code/frontend @test-code/web-team
+/api/ @test-code/api-team @test-code/backend
+
+# File type ownership
+*.yaml @test-code/infrastructure @test-code/devops
+*.sql @test-code/data-team @test-code/database-team
+*.jsx @test-code/frontend @test-code/ui-team
+*.py @test-code/backend @test-code/platform
+*.java @test-code/platform @test-code/backend
+*.go @test-code/backend @test-code/platform
